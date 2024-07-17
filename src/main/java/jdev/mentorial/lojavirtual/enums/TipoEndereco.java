@@ -1,4 +1,4 @@
-package jdev.mentorial.lojavirtual;
+package jdev.mentorial.lojavirtual.enums;
 
 public enum TipoEndereco {
 	
