@@ -129,6 +129,48 @@
  #### spring.mvc.static-path-pattern=/resources/static/**
  -  Padrão de caminho para recursos estáticos
 </details>
+
+<details>
+ <summary>Erro tag parent, pom.xml</summary>
+
+ # Erro tag parent, pom.xml
+  - O erro é referente ao maven não conseguir carregar as suas dependências
+    
+*Usado para copiar recursos (arquivos de configuração, arquivos de propriedades, etc.) do diretório de recursos do projeto para o diretório de destino durante o processo de construção.*
+ ```
+ <plugin>
+   <groupId>org.apache.maven.plugins</groupId>
+   <artifactId>maven-resources-plugin</artifactId>
+   <version>3.1.0</version>
+</plugin>
+ ```
+ - Adicione essa tag em:
+   
+ ```
+ <build>
+		<plugins>
+			<plugin>
+				 <groupId>org.springframework.boot</groupId>
+				 <artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <version>3.1.0</version>
+   </plugin>
+		</plugins>
+	</build>
+ ```
+ 
+ - Após isso, atualize o projeto
+
+![Captura de tela de 2024-08-17 11-29-46](https://github.com/user-attachments/assets/064643ba-46ca-46da-a25e-2a82bbb26e63)
+
+
+
+ 
+</details>
  
 
   
