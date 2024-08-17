@@ -1,8 +1,12 @@
 # Projeto Loja Virtual
 
 
- 
- #### spring.application.name=loja_virtual_mentoria
+<details>
+ <summary>application.properties</summary>
+
+ # application.properties
+
+  #### spring.application.name=loja_virtual_mentoria
  -  Nome da aplicação
 
  #### spring.datasource.url=jdbc:postgresql://localhost:5432/loja_virtual_mentoria
@@ -124,6 +128,9 @@
 
  #### spring.mvc.static-path-pattern=/resources/static/**
  -  Padrão de caminho para recursos estáticos
+</details>
+ 
+
   
 
   
